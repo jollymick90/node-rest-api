@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ],
+            "@base/*": [
+                "src/*"
+            ],
+            "@api/*": [
+                "src/api/*"
+            ]
+        },
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
